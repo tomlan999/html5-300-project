@@ -1,0 +1,15 @@
+* {box-sizing: border-box;
+}
+
+* {font-family: sans-serif;
+}
+
+h1 {
+  color: #1A1DC9;
+}
+
+#mapid { 
+  height: 500px;
+  width: 1000px;
+  margin: 20px 0px;
+}
