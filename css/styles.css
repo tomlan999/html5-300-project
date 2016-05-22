@@ -4,33 +4,55 @@
 * {font-family: sans-serif;
 }
 
+header {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: bisque;
+}
+
+body {
+  background-color: darksalmon;
+}
+
 h1 {
   color: #1A1DC9;
 }
 
+ul {
+  list-style: none;
+}
+
 #map-selector {
   float: left;
-  width: 48%;
+  width: 35%;
+  margin: 20px;
 }
 
 #mapid { 
   height: 400px;
-  width: 600px;
-  margin: 20px 0px;
+  width: 100%;
+}
+
+#images {
+  float: left;
+  width: 30%;
 }
 
 #images img {
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 450px;
   padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
 }
 
 #current-weather {
-  width: 48%;
-  float: right;
+  width: 30%;
+  float: left;
 }
 
 #forecast-weather {
-  width: 48%;
-  float: right;
+  width: 30%;
+  float: left;
 }

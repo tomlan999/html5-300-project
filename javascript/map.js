@@ -113,8 +113,7 @@ function forecastWeather(parsed_json){
 }
 
 function buildImages(image1, image2){
-  $("#images").empty();
-  $("#images").append('<img src="' + image1 + '">');
-  $("#images").append('<img src="' + image2 + '">');
-  
+  $("#image-list").empty();
+  $("#image-list").append('<li> <img src="' + image1 + '"> </li>');
+  $("#image-list").append('<li> <img src="' + image2 + '"> </li>');
 }
