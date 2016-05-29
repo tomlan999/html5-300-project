@@ -63,6 +63,12 @@ ul {
   float:left;
 }
 
+#logo {
+  height: 30px;
+  width: 130px;
+  margin-top: 10px;
+}
+
 #current-weather {
   clear: both;
   margin: 20px;

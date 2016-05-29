@@ -91,6 +91,7 @@ function setWeather(coordinates){
 function currentWeather(parsed_json){
   
   $("#current-weather").empty();
+  $("#current-weather").append('<img id="logo" src="images/wundergroundLogo_4c_horz.jpg">');
   $("#current-weather").append('<h2> Local Weather Conditions </h2>');
   $("#current-weather").append('<p> <b>Site of Observation: </b>' + parsed_json.current_observation.observation_location.full + '</p>');
   $("#current-weather").append('<p> <b>Time of Observation: </b>' + parsed_json.current_observation.observation_time + '</p>');
