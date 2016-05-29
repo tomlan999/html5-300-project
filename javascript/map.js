@@ -13,11 +13,9 @@ var locationsArray = [
     {loc : "Joshua Tree National Park", coord : [33.8734, -115.9010], image1 : "images/joshua1.jpg", image2 : "images/joshua2.jpg"}
 ];
 
-console.log(locationsArray[0].image1)
-
 var map;
 
-$('#submit').on( 'click', submit );
+$('#location').on( 'change', submit );
 
 buildOptions(locationsArray);
 setLocation(locationsArray[0].coord, locationsArray[0].loc);
@@ -91,8 +89,7 @@ function setWeather(coordinates){
 }
 
 function currentWeather(parsed_json){
-  console.log(parsed_json);
-  console.log(parsed_json.current_observation.display_location.city)
+  
   $("#current-weather").empty();
   $("#current-weather").append('<h2> Local Weather Conditions </h2>');
   $("#current-weather").append('<p> <b>Site of Observation: </b>' + parsed_json.current_observation.observation_location.full + '</p>');
