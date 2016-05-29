@@ -23,44 +23,54 @@ h2 {
   font-weight: 600;
 }
 
+.container {
+  display: none;
+}
+
 ul {
   list-style: none;
   padding: 0px;
 }
 
+#left-container {
+  float: left;
+  width: 45%;
+}
+
 #map-selector {
   float: left;
-  width: 35%;
+  width: 100%;
   margin: 20px;
 }
 
 #mapid { 
-  height: 400px;
+  height: 300px;
   width: 100%;
   margin-top: 20px;
 }
 
 #images {
+  clear: both;
   float: left;
-  width: 30%;
-  margin-top: 20px;
+  width: 100%;
+  margin: 20px;
 }
 
 #images img {
   height: auto;
-  width: 90%;
-  padding: 10px;
-  display: block;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
 }
 
 #current-weather {
-  width: 30%;
-  float: left;
+  width: 45%;
+  float: right;
+  margin-top: 20px;
 }
 
 #forecast-weather {
-  width: 30%;
-  float: left;
+  width: 45%;
+  float: right;
 }

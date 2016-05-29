@@ -17,7 +17,7 @@ console.log(locationsArray[0].image1)
 
 var map;
 
-$('#submit').on( 'click', submit );
+$('#location').on( 'change', submit );
 
 buildOptions(locationsArray);
 setLocation(locationsArray[0].coord, locationsArray[0].loc);

@@ -13,7 +13,16 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobile.css" type="text/css" rel="stylesheet" 
+media="screen and (min-width:1px) and (max-width:500px)"   />
+
+<link href="css/tablet.css" type="text/css" rel="stylesheet"
+media="screen and (min-width:501px) and (max-width:1000px)"
+ />
+
+<link href="css/styles.css" type="text/css" rel="stylesheet" 
+media="screen and (min-width:1001px) and (max-width:2048px)"
+/>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
@@ -32,10 +41,10 @@
       <h1 class="text-center">US National Park Maps and Weather</h1>
         <div class="container">
           <div class="row">
-            <img class="col-md-3" src="images/rainier1.jpg" alt="football" width="240" height="180">
-            <img class="col-md-3" src="images/lassen1.jpg" alt="snow" width="240" height="180">
-            <img class="col-md-3" src="images/yosemite1.jpg" alt="Jack Kerouac and Neal Cassidy" width="240" height="180">
-            <img class="col-md-3" src="images/channel1.jpg" alt="Jerry Garcia" width="240" height="180">
+            <img class="col-md-3" src="images/rainier1.jpg" alt="Mt Rainier" width="240" height="180">
+            <img class="col-md-3" src="images/lassen1.jpg" alt="Lassen NP" width="240" height="180">
+            <img class="col-md-3" src="images/yosemite1.jpg" alt="Yosemite NP" width="240" height="180">
+            <img class="col-md-3" src="images/channel1.jpg" alt="Channel Islands NP" width="240" height="180">
           </div>
         </div>
       
@@ -49,29 +58,30 @@
       </nav> -->
     </header>
     
-    <div id=map-selector>
-      <h2>National Park Locator</h1>
+    <div id=left-container>
+      <div id=map-selector>
+        <h2>National Park Locator</h1>
 
-      <div id="form">
-        <form id="map-input-form" method="post" action="#">
-          <label for="location">Choose a location:</label>
-          <select id="location">
-          </select> 
-          <input type="submit" id="submit" value="Submit"/>
-        </form>
+        <div id="form">
+          <form id="map-input-form" method="post" action="#">
+            <label for="location">Choose a location:</label>
+            <select id="location">
+            </select> 
+          </form>
+        </div>
+
+        <div id="mapid"></div>
       </div>
 
-      <div id="mapid"></div>
-    </div>
-    
-    <div id="images">
-      <ul id="image-list">
-      
-      </ul>
+      <div id="images">
+        <ul id="image-list">
+
+        </ul>
+      </div>
     </div>
     
     <div id="current-weather"></div>
-    
+
     <div id="forecast-weather"></div>
 
     <script type="text/javascript" src="javascript/map.js"></script>

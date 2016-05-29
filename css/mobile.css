@@ -10,57 +10,64 @@ header {
   background-color: bisque;
 }
 
+.container {
+  display: none;
+}
+
 body {
   background-color: darksalmon;
 }
 
 h1 {
   color: #1A1DC9;
+  font-size: 2em;
   font-weight: 600;
 }
 
 h2 {
+  font-size: 1.5em;
   font-weight: 600;
 }
 
 ul {
   list-style: none;
-  padding: 0px;
+}
+
+#left-container {
+  width: 100%;
 }
 
 #map-selector {
   float: left;
-  width: 35%;
+  width: 100%;
   margin: 20px;
 }
 
 #mapid { 
-  height: 400px;
-  width: 100%;
-  margin-top: 20px;
+  height: 200px;
+  width: 280px;
+  margin-top: 10px;
 }
 
 #images {
-  float: left;
-  width: 30%;
-  margin-top: 20px;
+  display: none;
 }
 
 #images img {
   height: auto;
-  width: 90%;
+  max-height: 248.4px;
+  width: 50%;
   padding: 10px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
+  float:left;
 }
 
 #current-weather {
-  width: 30%;
-  float: left;
+  clear: both;
+  margin: 20px;
 }
 
 #forecast-weather {
-  width: 30%;
-  float: left;
+  margin: 20px;
 }
