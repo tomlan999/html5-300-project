@@ -10,6 +10,10 @@ header {
   background-color: #9099A2;
 }
 
+nav ul {
+  padding-top: 10px;
+}
+
 body {
   background-color: #D5D5D5;
 }
