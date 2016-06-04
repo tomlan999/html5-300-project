@@ -7,7 +7,7 @@
 header {
   padding-top: 10px;
   padding-bottom: 20px;
-  background-color: bisque;
+  background-color: #9099A2;
 }
 
 .container {
@@ -15,11 +15,11 @@ header {
 }
 
 body {
-  background-color: darksalmon;
+  background-color: #D5D5D5;
+  overflow:hidden;
 }
 
 h1 {
-  color: #1A1DC9;
   font-size: 2em;
   font-weight: 600;
 }
@@ -47,6 +47,10 @@ ul {
   height: 200px;
   width: 280px;
   margin-top: 10px;
+}
+
+video {
+  display: none;
 }
 
 #images {

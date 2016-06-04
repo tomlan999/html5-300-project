@@ -7,15 +7,14 @@
 header {
   padding-top: 10px;
   padding-bottom: 20px;
-  background-color: bisque;
+  background-color: #9099A2;
 }
 
 body {
-  background-color: darksalmon;
+  background-color: #D5D5D5;
 }
 
 h1 {
-  color: #1A1DC9;
   font-weight: 600;
 }
 
@@ -47,6 +46,10 @@ ul {
   height: 300px;
   width: 100%;
   margin-top: 20px;
+}
+
+video {
+  display: none;
 }
 
 #images {
