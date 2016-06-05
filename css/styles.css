@@ -14,6 +14,10 @@ nav ul {
   padding-top: 10px;
 }
 
+.btn {
+   font-weight: 600;
+}
+
 body {
   background-color: #D5D5D5;
 }
